@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.techquiz.MainActivity">
+        <!--  1st question -->
+        <TextView
+            android:layout_marginTop="0dp"
+            style="@style/question"
+            android:text="1.Who is the CEO of facebook company?" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/mark1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mark Zuckerberg" />
+
+                <RadioButton
+                    android:id="@+id/larry1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Larry Page" />
+
+                <RadioButton
+                    android:id="@+id/elon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elon Musk" />
+
+                <RadioButton
+                    android:id="@+id/jeff1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jeff Bezos" />
+            </RadioGroup>
+        </LinearLayout>
+        <Button
+            android:id="@+id/submit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ques1"
+            android:text="Submit"/>
+        <!-- 2nd question -->
+        <TextView
+            style="@style/question"
+            android:text="2.Which software is used to develop android apps?" />
+
+        <EditText
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_green_light" />
+        <Button
+            android:id="@+id/submit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ques2"
+            android:text="Submit"/>
+        <!-- 3rd question -->
+        <TextView
+            style="@style/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.Android platform is available on which of these devices?" />
+
+        <CheckBox
+            android:id="@+id/mobile3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Phones" />
+
+        <CheckBox
+            android:id="@+id/tablets3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tablets" />
+
+        <CheckBox
+            android:id="@+id/led3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Led TV" />
+
+        <CheckBox
+            android:id="@+id/laptops3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laptops" />
+        <Button
+            android:id="@+id/submit3"
+            android:onClick="ques3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+        <!-- 4th question -->
+        <TextView
+            style="@style/question"
+            android:text="4. *.apk files work on which platform" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/ios4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IOS" />
+
+                <RadioButton
+                    android:id="@+id/android4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android" />
+
+                <RadioButton
+                    android:id="@+id/windows4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Windows" />
+
+                <RadioButton
+                    android:id="@+id/symbian4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Symbian" />
+            </RadioGroup>
+        </LinearLayout>
+        <Button
+            android:id="@+id/submit4"
+            android:onClick="ques4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="finalScore"
+            android:text="Final Score"/>
+    </LinearLayout>
+</ScrollView>
